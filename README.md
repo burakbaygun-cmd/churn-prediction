@@ -104,9 +104,9 @@ jupyter notebook churn_prediction.ipynb
 ## Proje Yapısı
 
 ```
-├── 1_eda.ipynb               # Keşifsel veri analizi
-├── 2_preprocessing.ipynb    # Encoding, feature engineering, ölçekleme
-├── 3_modeling.ipynb         # Model eğitimi, SMOTE, değerlendirme
+├── 1_eda.ipynb              
+├── 2_preprocessing.ipynb
+├── 3_modeling.ipynb
 ├── Churn.csv
 └── README.md
 ```
