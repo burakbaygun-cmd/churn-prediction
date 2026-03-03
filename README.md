@@ -90,13 +90,13 @@ En belirleyici değişkenler `Age`, `NumOfProducts`, `EstimatedSalary`, `Tenure/
 ## Kurulum
 
 ```bash
-pip install pandas numpy matplotlib seaborn scikit-learn lightgbm imbalanced-learn
+pip install -r requirements.txt
 ```
 
-Veri setini Kaggle'dan indirip `Churn.csv` adıyla proje klasörüne kaydedin, ardından notebook'u çalıştırın:
+Veri setini Kaggle'dan indirip `data/Churn.csv` olarak kaydedin, ardından notebook'ları sırayla çalıştırın:
 
 ```bash
-jupyter notebook churn_prediction.ipynb
+jupyter notebook
 ```
 
 ---
@@ -104,11 +104,15 @@ jupyter notebook churn_prediction.ipynb
 ## Proje Yapısı
 
 ```
-├── 1_eda.ipynb              
-├── 2_preprocessing.ipynb
-├── 3_modeling.ipynb
-├── Churn.csv
-└── README.md
+churn-prediction/
+├── README.md
+├── requirements.txt
+├── data/
+│   └── Churn.csv
+└── notebooks/
+    ├── 1_eda.ipynb
+    ├── 2_preprocessing.ipynb
+    └── 3_modeling.ipynb
 ```
 
 ---
