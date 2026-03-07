@@ -74,14 +74,15 @@ Random Forest, Gradient Boosting ve LightGBM modelleri 10 katlı çapraz doğrul
 
 ## Sonuçlar
 
-| Model | CV Doğruluk | Train Doğruluk | Test Doğruluk |
-|---|---|---|---|
-| Random Forest | — | — | ~%86 |
-| Random Forest + SMOTE | %89.24 | %92.61 | %89.39 |
-| LightGBM | %85.75 | — | %85.80 |
-| LightGBM + SMOTE | %89.47 | %92.61 | %89.45 |
+| Model | CV Doğruluk | Test Doğruluk |
+|---|---|---|
+| Random Forest (SMOTE öncesi) | ~%85.5 | %84.9 |
+| Gradient Boosting (SMOTE öncesi) | ~%86.3 | %85.3 |
+| LightGBM (SMOTE öncesi) | ~%85.8 | %85.8 |
+| **Random Forest + SMOTE** | **%89.24** | **%89.39** |
+| **LightGBM + SMOTE** | **%89.47** | **%89.45** |
 
-En iyi sonuç LightGBM + SMOTE kombinasyonuyla elde edilmiştir. 3186 tahmin üzerinden %89.42 doğruluk sağlanmış; churn olan müşteriler için precision %92, recall %87, f1-score %89 olarak gerçekleşmiştir.
+En iyi sonuç **LightGBM + SMOTE** kombinasyonuyla elde edilmiştir.
 
 En belirleyici değişkenler `Age`, `NumOfProducts`, `EstimatedSalary`, `Tenure/Age`, `ES/Tenure` ve `Geography_Germany` olarak öne çıkmıştır.
 
